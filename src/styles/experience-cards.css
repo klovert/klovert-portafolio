@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+/* ===== Sección Experiencia: cards & hover ===== */
+section#experiencia{
+    padding-bottom: 80px;
+}
+.exper-card {
+    display: block;
+    width: 625px;
+    height: auto;
+    text-decoration: none;
+    border-radius: 0; /* sin bordes por defecto */
+    overflow: visible;
+    transition: border-radius 0.3s ease, background-color 0.3s ease, backdrop-filter 0.3s ease;
+  }
+  
+  /* Inner flex container */
+  .exper-card__inner {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    padding: 1rem 1.5rem;
+  }
+  
+  /* Fecha a la izquierda */
+  .exper-card__date {
+    flex-shrink: 0;
+    color: #28C5E8;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 1rem;
+  }
+  
+  /* Contenido textual */
+  .exper-card__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* Título */
+  .exper-card__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  /* Hover: aparece la “card” */
+  .exper-card:hover {
+    background-color: rgba(24, 88, 114, 0.12);  /* #185872 12% */
+    border: 1px solid rgba(167, 236, 250, 0.5);  /* #A7ECFA 50% */
+    backdrop-filter: blur(20.4px);
+    border-radius: 10px;
+  }
+  
+  /* Responsive: mobile adapta ancho y border-radius */
+  @media (max-width: 640px) {
+    .exper-card {
+      width: 100%;
+      height: auto; /* que se adapte al contenido */
+    }
+    .exper-card:hover {
+      border-radius: 5px;
+    }
+  }
+  

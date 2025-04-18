@@ -1,0 +1,346 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BottomNav  from "../components/BottomNav.astro";
+---
+<Layout title="Portafolio de Klovert">
+  
+	<main class="relative bg-black text-white min-h-screen overflow-hidden">
+  
+	  <!-- 🌐 Esfera con blur -->
+	  <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+            w-[970px] h-[970px] bg-[#185872] rounded-full blur-[218px]
+            opacity-30 z-0 pointer-events-none">
+		</div>
+  
+	  <!-- Contenido principal -->
+	  <section class="relative z-10 px-4 sm:px-6 pt-[70px] sm:pt-[90px] pb-[30px] sm:pb-[40px] text-center max-w-3xl mx-auto">
+		<h1 class="text-[32px] sm:text-[40px] md:text-[56px] lg:text-[64px] font-normal mb-6">
+			&lt;Hola Mundo&gt;
+		</h1>
+	  
+		<p class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-xl mx-auto px-4 sm:px-0">
+			Transformo ideas en
+			<strong class="text-[#28C5E8]">experiencias digitales</strong>.
+			Diseño, maqueto y creo interfaces visuales que combinan	<strong class="text-[#28C5E8]">creatividad y funcionalidad</strong>.
+		</p>
+	  </section>
+
+	  <!--Contacto -->
+	  	<div class="flex flex-wrap justify-center gap-4 mt-8">
+
+			<!-- Gmail -->
+			<div class="btn-gmail-wrapper">
+				<a href="mailto:tu-correo@gmail.com" class="btn-gmail-inner group">
+				<span class="btn-gmail-icon">
+					<svg width="20" height="20" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M15.5017 1.43334L10.0588 5.83086L4.4914 1.43334V1.43452L4.49813 1.44047V7.59817L9.99605 12.0907L15.5017 7.77163V1.43334Z" fill="#EA4335"/>
+					<path d="M16.9305 0.363652L15.5011 1.43331V7.77163L19.9989 4.19663V2.04301C19.9989 2.04301 19.453 -1.03285 16.9305 0.363652Z" fill="#FBBC05"/>
+					<path d="M15.5011 7.77163V15.9926H18.9484C18.9484 15.9926 19.9295 15.888 20 14.7304V4.19663L15.5011 7.77163Z" fill="#34A853"/>
+					<path d="M4.49838 15.9998L4.49813 7.59817L4.4914 7.59224L4.49838 15.9998Z" fill="#C5221F"/>
+					<path d="M4.4914 1.43452L3.06958 0.370644C0.547094 -1.02586 0 2.04883 0 2.04883V4.20237L4.4914 7.59224V1.43452Z" fill="#C5221F"/>
+					<path d="M0 4.20397V14.7377C0.0695107 15.8966 1.0516 16 1.0516 16H4.49898L4.4914 7.59224L0 4.20397Z" fill="#4285F4"/>
+					</svg>
+					<span class="shine"></span>
+				</span>
+				<span class="btn-gmail-text hidden sm:inline">Contáctame</span>
+				</a>
+			</div>  
+			<!-- WhatsApp -->
+			<div class="btn-gmail-wrapper">
+				<a href="whatsapp link" class="btn-gmail-inner group">
+				<span class="btn-gmail-icon">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M5.2881 17.1892L5.61505 17.3514C6.97753 18.1622 8.50337 18.5405 10.0293 18.5405C14.8249 18.5405 18.7486 14.6487 18.7486 9.8919C18.7486 7.62166 17.8221 5.40543 16.1873 3.78379C14.5524 2.16214 12.3725 1.24326 10.0293 1.24326C5.23365 1.24326 1.30988 5.13514 1.36441 9.94599C1.36441 11.5676 1.85488 13.1352 2.67228 14.4865L2.89025 14.8108L2.01839 18L5.2881 17.1892Z" fill="#00E676"/>
+						<path d="M17.1137 2.91891C15.2608 1.02706 12.6996 0 10.0837 0C4.52522 0 0.0565446 4.48647 0.110997 9.94591C0.110997 11.6757 0.601458 13.3514 1.41895 14.8649L0.00201416 20L5.2881 18.6486C6.75949 19.4595 8.3943 19.8379 10.0293 19.8379C15.5333 19.8379 20.002 15.3513 20.002 9.89198C20.002 7.24327 18.9665 4.75676 17.1137 2.91891ZM10.0837 18.1622C8.61235 18.1622 7.14096 17.7839 5.88755 17.0272L5.5606 16.865L2.39987 17.6757L3.21728 14.5947L2.99931 14.2703C0.601458 10.4326 1.74589 5.35134 5.66958 2.97292C9.59327 0.594585 14.6614 1.72974 17.0592 5.62163C19.457 9.51351 18.3126 14.5406 14.389 16.919C13.1355 17.7298 11.6096 18.1622 10.0837 18.1622V18.1622ZM14.8794 12.1623L14.2799 11.892C14.2799 11.892 13.4081 11.5136 12.8631 11.2433C12.8085 11.2433 12.7541 11.1892 12.6996 11.1892C12.536 11.1892 12.4271 11.2433 12.3181 11.2974C12.3181 11.2974 12.2636 11.3514 11.5007 12.2163C11.4461 12.3244 11.3371 12.3785 11.2282 12.3785H11.1736C11.1192 12.3785 11.0102 12.3244 10.9557 12.2704L10.6832 12.1623C10.0837 11.892 9.53882 11.5676 9.10281 11.1352C8.99383 11.0271 8.83031 10.919 8.72133 10.8109C8.33985 10.4326 7.95837 10.0001 7.68596 9.51359L7.63143 9.40549C7.57697 9.3514 7.57697 9.29739 7.52244 9.18929C7.52244 9.08119 7.52244 8.97309 7.57697 8.91901C7.57697 8.91901 7.79494 8.64872 7.95837 8.48661C8.06744 8.37843 8.12189 8.21632 8.23087 8.10822C8.33985 7.94604 8.39438 7.72984 8.33985 7.56765C8.2854 7.29736 7.63143 5.83791 7.46799 5.51361C7.35893 5.35142 7.25003 5.29741 7.08651 5.24332H6.48707C6.37801 5.24332 6.2691 5.29741 6.16004 5.29741L6.10551 5.35142C5.99653 5.40551 5.88755 5.51361 5.77856 5.56762C5.66958 5.6758 5.61505 5.78382 5.50607 5.89199C5.12459 6.37848 4.90662 6.97306 4.90662 7.56765C4.90662 8.00005 5.01561 8.43252 5.17912 8.81091L5.23365 8.97309C5.72411 10.0001 6.37801 10.919 7.25003 11.7298L7.46799 11.946C7.63143 12.1082 7.79494 12.2163 7.90392 12.3784C9.04836 13.3515 10.3562 14.0541 11.8276 14.4325C11.9911 14.4865 12.2091 14.4865 12.3726 14.5406H12.9175C13.19 14.5406 13.517 14.4325 13.735 14.3244C13.8984 14.2163 14.0074 14.2163 14.1164 14.1082L14.2255 14.0001C14.3344 13.892 14.4434 13.838 14.5524 13.7299C14.6614 13.6218 14.7704 13.5137 14.8249 13.4055C14.9339 13.1893 14.9883 12.919 15.0429 12.6488V12.2704C15.0429 12.2704 14.9883 12.2163 14.8794 12.1623Z" fill="white"/>
+						</svg>
+					<span class="shine"></span>
+				</span>
+				<span class="btn-gmail-text hidden sm:inline">WhatsApp</span>
+				</a>
+			</div>  
+
+			<!-- Linkedin -->
+			<div class="btn-gmail-wrapper">
+				<a href="linkedin link" class="btn-gmail-inner group">
+				<span class="btn-gmail-icon">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M17 0H3C1.34315 0 0 1.34315 0 3V17C0 18.6569 1.34315 20 3 20H17C18.6569 20 20 18.6569 20 17V3C20 1.34315 18.6569 0 17 0Z" fill="#0077B5"/>
+						<path d="M5.54688 6.83594C6.3451 6.83594 6.99219 6.18885 6.99219 5.39062C6.99219 4.5924 6.3451 3.94531 5.54688 3.94531C4.74865 3.94531 4.10156 4.5924 4.10156 5.39062C4.10156 6.18885 4.74865 6.83594 5.54688 6.83594Z" fill="white"/>
+						<path d="M9.53125 7.57812V15.3125V7.57812ZM5.54688 7.57812V15.3125V7.57812Z" fill="white"/>
+						<path d="M9.53125 7.57812V15.3125M5.54688 7.57812V15.3125" stroke="white" stroke-width="3"/>
+						<path d="M10.7812 11.0156C10.7812 10.2344 11.2891 9.45312 12.1875 9.45312C13.125 9.45312 13.4766 10.1562 13.4766 11.2109V15.3125H16.0547V10.8984C16.0547 8.51562 14.8047 7.42188 13.0859 7.42188C11.7578 7.42188 11.0938 8.16406 10.7812 8.67188" fill="white"/>
+						</svg>
+					<span class="shine"></span>
+				</span>
+				<span class="btn-gmail-text hidden sm:inline">Linkedin</span>
+				</a>
+			</div>
+
+			<!-- Moviil -->
+			<div class="btn-gmail-wrapper">
+				<a href="tel:+34678112929" class="btn-gmail-inner group">
+				<span class="btn-gmail-icon">
+					<svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M19.6402 1.62489C19.5905 1.52029 19.4481 1.42001 19.3502 1.34967C19.3481 1.3466 19.3455 1.34357 19.3434 1.34077C19.3455 1.34331 19.3471 1.34611 19.3492 1.34861C19.2335 1.26558 19.0874 1.20949 18.9142 1.19171L12.2433 0.501281C11.6418 0.438787 10.9493 0.847634 10.7006 1.40932L5.72784 12.6717C5.62472 12.9043 5.61526 13.1285 5.68124 13.3154C5.70167 13.8535 6.21936 14.2689 6.72659 14.3215C6.81401 14.3306 6.90143 14.3395 6.98885 14.3486C7.47776 14.3992 7.96616 14.4497 8.45455 14.5005C9.78095 14.6376 11.1069 14.7747 12.4328 14.9124C13.1206 14.9835 13.7927 15.1323 14.3827 14.7394C15.037 14.305 15.3239 13.5869 15.7227 12.6389C17.2182 9.08347 18.2657 6.56884 19.824 3.04126C19.9119 2.84116 20.0046 2.64591 19.9998 2.41787C19.9998 2.41761 19.9998 2.41814 19.9998 2.41787C19.9888 2.11852 19.8469 1.86585 19.6402 1.62489ZM10.5467 12.8949C10.4253 13.1532 10.0892 13.3399 9.79873 13.3111C9.50873 13.2827 9.37162 13.0498 9.49303 12.7916C9.61396 12.5341 9.94791 12.3472 10.2379 12.3759C10.5279 12.4041 10.6672 12.6377 10.5467 12.8949ZM14.2742 11.7566L7.55518 11.0611L11.6261 1.84603L18.3446 2.5418L14.2742 11.7566Z" fill="#EDFDFE"/>
+						<path d="M3.06555 0.517009L2.55992 0C1.54493 0.932677 0.759772 2.12867 0.336258 3.51946C-0.0877637 4.91147 -0.0971778 6.32788 0.231571 7.64629L0.945553 7.47768C0.64614 6.2766 0.655007 4.98973 1.04133 3.72158C1.42711 2.45422 2.14113 1.36741 3.06555 0.517009Z" fill="#EDFDFE"/>
+						<path d="M2.99121 4.28073C2.67977 5.30508 2.67246 6.34895 2.9148 7.32074L3.62879 7.15164C3.41629 6.29692 3.42254 5.38254 3.69633 4.48261C3.97062 3.58192 4.47785 2.81024 5.1353 2.20614L4.62964 1.6881C3.88211 2.37524 3.30371 3.25535 2.99121 4.28073Z" fill="#EDFDFE"/>
+						<path d="M6.35179 5.24357C6.51405 4.71034 6.81557 4.25556 7.20655 3.89523L6.70089 3.37772C6.22194 3.81878 5.84769 4.38222 5.64718 5.04146C5.44671 5.70013 5.4446 6.37101 5.60007 6.99315L6.31405 6.8248C6.18796 6.31697 6.18952 5.77635 6.35179 5.24357Z" fill="#EDFDFE"/>
+						</svg>
+					<span class="shine"></span>
+				</span>
+				<span class="btn-gmail-text hidden sm:inline">Móvil</span>
+				</a>
+			</div>
+	  	</div>
+		
+		<!-- Menu -->
+		<BottomNav  />
+
+		<!-- Contenido Experiencia -->
+		<section id="experiencia" class="tab-panel block flex flex-col items-center gap-10 mt-[60px]">
+			<!-- Card 1 -->
+			<a href="https://tenofransa.com" target="_blank" class="exper-card">
+			  <div class="exper-card__inner">
+				<span class="exper-card__date">2024 — 2025</span>
+				<div class="exper-card__content">
+				  <h3 class="exper-card__title">
+					Tenofransa <span aria-hidden="true">↗</span>
+				  </h3>
+				  <ul class="list-disc list-inside space-y-1 text-sm text-gray-200">
+					<li>Rediseño completo y optimización de la página web para mejorar la experiencia del usuario y el rendimiento.</li>
+
+					<li>Creación de contenido gráfico y audiovisual adaptado a estrategias de marketing digital.</li>
+
+					<li>Gestión activa y estratégica de redes sociales, incrementando el alcance y la interacción.</li>
+
+					<li>Optimización SEO integral de contenidos para mejorar el posicionamiento orgánico.</li>
+
+					<li>Diseño y ejecución de campañas publicitarias para redes sociales.</li>
+
+					<li>Desarrollo de un plugin personalizado en WordPress para gestionar los pedidos de la empresa con exportación automatizada en formatos PDF y Excel.</li>
+
+					<li>Modelado y renderizado de maquetas en 3D para presentaciones de producto.</li>
+				  </ul>
+				</div>
+			  </div>
+			</a>
+		  
+			<!-- Card 2 -->
+			<a href="https://vazmotor.madrid" target="_blank" class="exper-card">
+			  <div class="exper-card__inner">
+				<span class="exper-card__date">2023 — 2024</span>
+				<div class="exper-card__content">
+				  <h3 class="exper-card__title">
+					Vazmotor <span aria-hidden="true">↗</span>
+				  </h3>
+				  	<ul class="list-disc list-inside space-y-1 text-sm text-gray-200">
+					<li>Diseño y desarrollo frontend completo de la página web, con énfasis en la experiencia del usuario.</li>
+
+					<li>Maquetación web adaptativa y optimización para diferentes dispositivos y navegadores.</li>
+
+					Desarrollo de un plugin a medida que visualiza y compara mejoras técnicas en vehículos.</li>
+
+					<li>Diseño y gestión de la base de datos completa de vehículos, incluyendo especificaciones técnicas como marca, año de fabricación, potencia, tipo de combustible y motor.</li>
+
+					<li>Creación de contenido gráfico profesional para web y redes sociales.</li>
+
+					<li>Gestión estratégica y operativa de redes sociales para aumentar el engagement de la marca.</li>
+					</ul>
+				</div>
+			  </div>
+			</a>
+		  
+			<!-- Card 3 -->
+			<a href="https://ciriumdental.madrid" target="_blank" class="exper-card">
+			  <div class="exper-card__inner">
+				<span class="exper-card__date">2024 — 2025</span>
+				<div class="exper-card__content">
+				  <h3 class="exper-card__title">
+					Cirium Dental <span aria-hidden="true">↗</span>
+				  </h3>
+				  <ul class="list-disc list-inside space-y-1 text-sm text-gray-200">
+					<li>Diseño creativo y desarrollo responsive de la página web corporativa, asegurando coherencia con la identidad visual de la empresa.</li>
+
+					<li>Maquetación precisa del sitio web, asegurando la compatibilidad y rendimiento en diferentes dispositivos.</li>
+
+					<li>Creación de contenido gráfico especializado, tanto para uso web como para comunicación interna y campañas internas.</li>
+				  </ul>
+				</div>
+			  </div>
+			</a>
+		</section>
+
+		<!-- Contenido Proyectos -->
+		<section
+		id="proyectos"
+		class="tab-panel hidden px-4 sm:px-0 flex flex-col items-center gap-2 mt-[60px]"
+	  >
+		<!-- Proyecto 1 -->
+		<div class="proj-card-wrapper flex flex-col sm:flex-row gap-6 items-start">
+		  <!-- Imagen / placeholder -->
+		  <div class="proj-card-image bg-gray-800 w-full sm:w-[435px] h-[245px]"></div>
+	  
+		  <!-- Contenido -->
+		  <div class="proj-card-content flex-1 flex flex-col gap-4">
+			<!-- Título -->
+			<h3 class="proj-card-title text-[24px] font-bold text-[#EDFDFE]">
+			  SnapStyle
+			</h3>
+	  
+			<!-- Tecnologías -->
+			<div class="flex flex-wrap gap-2">
+			  <span class="proj-tech">Tailwind</span>
+			  <span class="proj-tech">Color Thief API</span>
+			  <span class="proj-tech">Astro</span>
+			  <span class="proj-tech">GSAP</span>
+			  <span class="proj-tech">JS</span>
+			</div>
+	  
+			<!-- Descripción -->
+			<p class="proj-card-desc text-[#FFFFFF] text-[16px]">
+			  Genera paletas de colores a partir de imágenes subidas por el usuario, ayudando a diseñadores y
+			  creativos a encontrar combinaciones visuales inspiradoras.
+			</p>
+	  
+			<!-- Botones -->
+			<div class="flex gap-4">
+			  <button class="btn-proj-wrapper">
+				<a href="https://github.com/tu-user/snapstyle" target="_blank"   class="btn-proj-inner group">
+				  <span class="btn-proj-icon">
+					<img src="/src/assets/git.svg" alt="Código" class="w-5 h-5" />
+				  </span>
+				  <span class="btn-proj-text">Código</span>
+				</a>
+			  </button>
+			  <button class="btn-proj-wrapper">
+				<a href="https://snapstyle.example.com" target="_blank"   class="btn-proj-inner group">
+				  <span class="btn-proj-icon">
+					<img src="/src/assets/link.svg" alt="Preview" class="w-5 h-5" />
+				  </span>
+				  <span class="btn-proj-text">Preview</span>
+				</a>
+			  </button>
+			</div>
+		  </div>
+		</div>
+	  
+		<!-- Proyecto 2 -->
+		<div class="proj-card-wrapper flex flex-col sm:flex-row gap-6 items-start">
+		  <div class="proj-card-image bg-gray-800 w-full sm:w-[435px] h-[245px]"></div>
+		  <div class="proj-card-content flex-1 flex flex-col gap-4">
+			<h3 class="proj-card-title text-[24px] font-bold text-[#EDFDFE]">
+			  PokéTeam Builder
+			</h3>
+			<div class="flex flex-wrap gap-2">
+			  <span class="proj-tech">Tailwind CSS</span>
+			  <span class="proj-tech">Poke API</span>
+			  <span class="proj-tech">Astro</span>
+			  <span class="proj-tech">GSAP</span>
+			  <span class="proj-tech">JS</span>
+			</div>
+			<p class="proj-card-desc text-[#FFFFFF] text-[16px]">
+			  Permite a jugadores y fans crear equipos Pokémon, comparando estadísticas en tiempo real
+			  para planificar estrategias equilibradas.
+			</p>
+			<div class="flex gap-4">
+			  <button class="btn-proj-wrapper">
+				<a href="https://github.com/tu-user/poketeam" target="_blank" class="btn-proj-inner group">
+				  <span class="btn-proj-icon">
+					<img src="/src/assets/git.svg" alt="Código" class="w-5 h-5" />
+				  </span>
+				  <span class="btn-proj-text">Código</span>
+				</a>
+			  </button>
+			  <button class="btn-proj-wrapper">
+				<a href="https://poketeam.example.com" target="_blank" class="btn-proj-inner group">
+				  <span class="btn-proj-icon">
+					<img src="/src/assets/link.svg" alt="Preview" class="w-5 h-5" />
+				  </span>
+				  <span class="btn-proj-text">Preview</span>
+				</a>
+			  </button>
+			</div>
+		  </div>
+		</div>
+	  
+		<!-- Proyecto 3 -->
+		<div class="proj-card-wrapper flex flex-col sm:flex-row gap-6 items-start">
+		  <div class="proj-card-image bg-gray-800 w-full sm:w-[435px] h-[245px]"></div>
+		  <div class="proj-card-content flex-1 flex flex-col gap-4">
+			<h3 class="proj-card-title text-[24px] font-bold text-[#EDFDFE]">
+			  DevTasks
+			</h3>
+			<div class="flex flex-wrap gap-2">
+			  <span class="proj-tech">Tailwind CSS</span>
+			  <span class="proj-tech">Supabase</span>
+			  <span class="proj-tech">Astro</span>
+			  <span class="proj-tech">React</span>
+			</div>
+			<p class="proj-card-desc text-[#FFFFFF] text-[16px]">
+			  Un gestor de tareas intuitivo diseñado para ayudar a desarrolladores a organizar proyectos y
+			  mejorar su productividad.
+			</p>
+			<div class="flex gap-4">
+			  <button class="btn-proj-wrapper">
+				<a href="https://github.com/tu-user/devtasks" target="_blank" class="btn-proj-inner group">
+				  <span class="btn-proj-icon">
+					<img src="/src/assets/git.svg" alt="Código" class="w-5 h-5" />
+				  </span>
+				  <span class="btn-proj-text">Código</span>
+				</a>
+			  </button>
+			  <button class="btn-proj-wrapper">
+				<a href="https://devtasks.example.com" target="_blank" class="btn-proj-inner group">
+				  <span class="btn-proj-icon">
+					<img src="/src/assets/link.svg" alt="Preview" class="w-5 h-5" />
+				  </span>
+				  <span class="btn-proj-text">Preview</span>
+				</a>
+			  </button>
+			</div>
+		  </div>
+		</div>
+	  	</section>
+		
+		<!-- Contenido Sobre mí -->
+		<section
+		id="sobre-mi"
+		class="tab-panel hidden flex flex-col items-center mt-[60px] px-4"
+	  >
+		<!-- Card de texto -->
+		<div
+		  class="w-full sm:w-[500px] rounded-[5px] sm:rounded-[10px]
+				 border border-[rgba(167,236,250,0.5)] p-6"
+		>
+		  <p class="text-justify text-[16px] font-normal text-white leading-relaxed">
+			Hola, soy Klovert Alexis. Empecé en el mundo de la programación desde los 15 años, me egresé en Ingeniería de Software en Perú. Actualmente me dedico al campo de diseño y desarrollo web, también he ocupado cargos como diseñador gráfico y community manager.
+			<br/><br/>
+			Me gusta explorar, diseñar y construir experiencias digitales. Me apasiona transformar ideas en interfaces atractivas y funcionales, combinando creatividad y tecnología. Desde el diseño y la creación de contenido visual hasta la producción multimedia.
+			<br/><br/>
+			¿Tienes una idea? ¡Déjame plasmarla!
+		  </p>
+		</div>
+	  
+		<!-- Imagen debajo del texto -->
+		<img
+		  src="/src/assets/tu-imagen-sobre-mi.png"
+		  alt="Foto de Klovert Alexis"
+		  class="w-full sm:w-[500px] sm:h-[500px] object-cover rounded-[5px] sm:rounded-[10px] mt-6"
+		/>
+	  	</section>
+	  
+		  <!-- Footer -->
+		  <footer class="mt-[60px] py-6 px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-300">
+			<p class="mb-2 sm:mb-0">
+			  © 2025 Klovert. Casi todos los derechos reservados
+			</p>
+			<p>
+			  Diseñado libremente en Figma y codificado en Visual Studio Code por mí
+			</p>
+		  </footer>
+
+	</main>
+  </Layout>
+  
+
+

@@ -1,0 +1,40 @@
+---
+// src/components/BottomNav.astro
+
+const botones = [
+  { id: "experiencia", label: "Experiencia" },
+  { id: "proyectos", label: "Proyectos" },
+  { id: "sobre-mi", label: "Sobre mí" }
+];
+---
+
+<!-- Versión escritorio/tablet -->
+<div class="hidden sm:flex justify-center gap-4 mt-10">
+  {botones.map(({ id, label }) => (
+    <button class="btn-gmail-wrapper">
+      <a class="btn-gmail-inner group nav-tab-button" data-tab={id}>
+        <span class="btn-gmail-text">{label}</span>
+      </a>
+    </button>
+  ))}
+</div>
+
+<!-- Versión móvil: solo un botón con flechas -->
+<div class="sm:hidden flex justify-center items-center gap-4 mt-10">
+  <button id="nav-prev" class="text-white text-xl cursor-pointer select-none">
+    <span>&#10094;</span>
+  </button>
+
+<div class="btn-gmail-wrapper">
+  <a id="nav-mobile-btn" class="btn-gmail-inner group nav-tab-button" data-tab="experiencia">
+    <span class="btn-gmail-text">Experiencia</span>
+  </a>
+</div>
+
+<button id="nav-next" class="text-white text-xl cursor-pointer select-none">
+  <span>&#10095;</span>
+</button>
+</div>
+
+
+  
